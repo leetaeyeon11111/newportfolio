@@ -1,14 +1,6 @@
 import Link from 'next/link'
 
-async function fetchCourses() {
-  const response = await fetch(
-    'https://newportfolio-d2q08w4eq-leetaeyeon11111.vercel.app/api/courses'
-  )
-  const courses = await response.json()
-  return courses
-}
-
-const Courses = async () => {
+const Courses = async ({ courses }) => {
   const courses = await fetchCourses()
   return (
     <div className="grid grid-cols-2 gap-30">
