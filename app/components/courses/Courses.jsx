@@ -8,7 +8,7 @@ async function fetchCourses() {
   return courses
 }
 
-const Courses = async ({ courses }) => {
+const Courses = async () => {
   const courses = await fetchCourses()
   return (
     <div className="grid grid-cols-2 gap-30">
