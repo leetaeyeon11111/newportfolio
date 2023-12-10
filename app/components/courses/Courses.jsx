@@ -1,5 +1,13 @@
 import Link from 'next/link'
 
+async function fetchCourses() {
+  const response = await fetch(
+    'https://newportfolio-git-master-leetaeyeon11111.vercel.app/api/courses'
+  )
+  const courses = await response.json()
+  return courses
+}
+
 const Courses = async ({ courses }) => {
   const courses = await fetchCourses()
   return (
