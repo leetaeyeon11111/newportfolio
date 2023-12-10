@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 async function fetchCourses() {
   const response = await fetch(
-    'https://newportfolio-bgnv8guwx-leetaeyeon11111.vercel.app/api/courses'
+    'https://newportfolio-seven-chi.vercel.app/api/courses'
   )
   const courses = await response.json()
   return courses
