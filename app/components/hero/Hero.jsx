@@ -47,6 +47,13 @@ const Hero = ({ pageName, title, bgColor = '#f8f9fa', imageUrl }) => {
               leetaeyeon11111 Git Hub page
             </Link>
           </button>
+          <button
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            className="px-8 py-2 mt-4 ml-3 text-white bg-[#45ce63] rounded-full hover:bg-[#65d18e] duration-300 "
+          >
+            <Link href="https://blog.naver.com/hahaha2662">NAVER Blog</Link>
+          </button>
         </div>
         {imageUrl && (
           <img
